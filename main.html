@@ -1,0 +1,93 @@
+<html>
+<head>
+    <title>SRH Simulator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+<nav>
+  <ul>
+    <li><a href="main.html">Home</a></li>
+    <li><a href="index.html">3D Model Viewer</a></li>
+    <li><a href="about.html">Credits</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+
+
+<div class = "welcome_text">
+  <h1 style="color: white; padding: 20px; text-align: left; transform: translateY(30px); opacity: 0; animation: slideUp 0.8s ease-out 0.5s forwards;">SR3D<br>Simulator</h1>
+  <h1 style="color: white; padding: 20px; text-align: left; transform: translateY(30px); opacity: 0; animation: slideUp 0.8s ease-out 0.5s forwards;">A user-friendly 3D<br>Model Viewer designed<br>for students and<br>teachers!</h1>
+  <style>
+@keyframes slideUp {
+  from { 
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to { 
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+</style>
+</div>
+
+<br>
+
+<div class="news-ticker-container">
+<div id="news-ticker">
+ 
+</div>
+</div>
+<script>
+
+const headlines = [
+  "'Amazing Quality! I can easily view my 3D models, and it's user-friendly!' - 3na",
+  "'Umazing! -Kira'",
+  "'Great for students like me!' - Hannah Celeste",
+  "KIMI NO AIBA GA ZUKYUN DOKYUN HASHIRIDESHI"
+
+];
+
+const newsTicker = document.getElementById('news-ticker');
+let currentIndex = 0;
+
+function updateHeadline() {
+   // 1. Reset the position to the bottom instantly by setting the transform to 'none'
+  newsTicker.style.transform = 'translateY(0)';
+  
+  // 2. Change the text to the new headline
+  newsTicker.textContent = headlines[currentIndex];
+  
+  // 3. Increment the index
+  currentIndex = (currentIndex + 1) % headlines.length;
+  
+  // 4. Use a brief delay before starting the upward movement
+  setTimeout(() => {
+    newsTicker.style.transform = 'translateY(-5%)';
+  }, 50); // A very short delay to ensure the browser has time to register the 'bottom' position
+}
+
+
+
+// Set an interval to change the text every 5 seconds (5000 milliseconds)
+setInterval(updateHeadline, 3500);
+
+// Update the headline immediately when the page loads
+updateHeadline(); 
+
+</script>
+
+
+</body>
+</html>
+
+<!--DO NOT TOUCH THE JAVASCRIPT-->
+
