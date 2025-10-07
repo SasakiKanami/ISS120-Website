@@ -3,7 +3,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    background-color: #1f1e33;
+    background-color: #7474a7;
 }
 h1 {
     color: navy;
@@ -11,7 +11,7 @@ h1 {
 
 /* Style the entire navigation bar */
 nav {
-  background-color: #131324; /* Dark background color */
+  background-color: #191979; /* Dark background color */
   overflow: hidden; /* Ensures the background color extends fully */
   position: fixed;
   top: 0;
@@ -46,7 +46,7 @@ nav li a {
 
 /* Add a hover effect for user interaction */
 nav li a:hover {
-  background-color: #555; /* A slightly lighter background on hover */
+  background-color: #696767; /* A slightly lighter background on hover */
 }
 
 .welcome_text {
