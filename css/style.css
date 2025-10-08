@@ -4,6 +4,8 @@ body {
     font-weight: 700;
     font-style: normal;
     background-color: #7474a7;
+    margin: 0;
+    overflow: hidden;
 }
 h1 {
     color: navy;
@@ -16,8 +18,9 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  background-color: #2c2f44; /* The dark background color from your image */
+  width: 100vw;
+  height: 8vh;
+  background-color: #1f1e33; /* The dark background color from your image */
   color: white;
   z-index: 1000; /* Ensures the navbar stays on top of other content */
 }
@@ -27,12 +30,18 @@ nav ul {
   list-style-type: none; /* Removes the bullet points */
   margin: 0;
   padding: 0;
-  text-align: right; /* Centers the list items */
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
 }
 
 /* Style the list items to be horizontal */
 nav li {
  display: inline-block;
+ font-size: 1.15vw;
+ 
+ 
 }
 
 /* Style the links inside the list items */
@@ -112,6 +121,7 @@ nav li a:hover {
   flex-direction: column;
   gap: 10px;
   z-index: 1000;
+
 }
 
 .model-btn {
@@ -122,9 +132,12 @@ nav li a:hover {
   border-radius: 8px;
   cursor: pointer;
   font-family: 'Arial', sans-serif;
-  font-size: 14px;
+  font-size: 1.25vw;
   transition: all 0.3s ease;
   backdrop-filter: blur(10px);
+  width: 10vw;
+  height: 10vh;
+  overflow: hidden;
 }
 
 .model-btn:hover {
@@ -136,3 +149,19 @@ nav li a:hover {
   background: #8BC34A;
   border-color: #ace071;
 }
+
+.div-et-impera{
+  border-width: 2px;
+  border-style: solid;
+  margin-bottom: -600px;
+  border-color:#318ea5;
+  margin-top: -400px;
+  max-width: 20vw; 
+  min-width: 20vw;
+  padding: 5px;
+  margin-left: 30px;
+  background-color: #44a3bb;
+  position: relative;
+  z-index: 1000;
+
+} /*well Hannah was right, I will put a bunch of rhythm game references if I'm the main coder*/
