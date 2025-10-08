@@ -9,7 +9,7 @@ let mouseX = window.innerWidth / 2;
 let mouseY = window.innerHeight / 2;
 let object = null;
 let controls = null;
-let currentModel = 'dino';
+let currentModel = 'mitochondria';
 
 const loader = new GLTFLoader();
 const renderer = new THREE.WebGLRenderer({ alpha: true });
@@ -62,6 +62,24 @@ function loadModel(modelName) {
         camera.position.y = 12;
         camera.position.z = 326;
       }
+
+      if (modelName === "lego-titanic") {
+        controls = new OrbitControls(camera, renderer.domElement);
+        controls.enableDamping = true;
+        controls.dampingFactor = 0.25;
+         camera.position.x = 162;
+        camera.position.y = 12;
+        camera.position.z = 326;
+     }
+
+           if (modelName === "shork") {
+        controls = new OrbitControls(camera, renderer.domElement);
+        controls.enableDamping = true;
+        controls.dampingFactor = 0.25;
+         camera.position.x = 162;
+        camera.position.y = 12;
+        camera.position.z = 326;
+     }
 
       if (modelName === "goldship") {
         controls = new OrbitControls(camera, renderer.domElement);

@@ -13,13 +13,13 @@ h1 {
 
 /* Style the entire navigation bar */
 nav {
-  background-color: #191979; /* Dark background color */
+  background-color: #1f1e33; /* Dark background color */
   overflow: hidden; /* Ensures the background color extends fully */
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
-  height: 8vh;
+  height: 6vh;
   background-color: #1f1e33; /* The dark background color from your image */
   color: white;
   z-index: 1000; /* Ensures the navbar stays on top of other content */
@@ -131,7 +131,7 @@ nav li a:hover {
   border: 2px solid #3d5369;
   border-radius: 8px;
   cursor: pointer;
-  font-family: 'Arial', sans-serif;
+  
   font-size: 1.25vw;
   transition: all 0.3s ease;
   backdrop-filter: blur(10px);
@@ -150,18 +150,113 @@ nav li a:hover {
   border-color: #ace071;
 }
 
-.div-et-impera{
+.div-et-impera {
   border-width: 2px;
   border-style: solid;
-  margin-bottom: -600px;
-  border-color:#318ea5;
-  margin-top: -400px;
-  max-width: 20vw; 
-  min-width: 20vw;
+  border-color: #1f1e33;
   padding: 5px;
-  margin-left: 30px;
-  background-color: #44a3bb;
-  position: relative;
+  background-color: #1f1e33;
+  position: fixed;
+  
+  justify-content: space-around;
   z-index: 1000;
+  color: white;
+  
+  /* Start at the bottom (off-screen to the left) */
+  left: 50px;
+  bottom: -610px; /* Position from bottom instead of top */
+  
+  /* Fixed size */
+  width: 30vw; 
+  height: 650px;
+  
+  /* Fixed font size */
+  font-size: 1.35vw;
+  
+  /* Smooth transition for both left and bottom */
+  transition: left 0.3s ease-in-out, bottom 0.3s ease-in-out;
+  
+  /* Prevent text scaling */
+  transform: none !important;
+}
 
-} /*well Hannah was right, I will put a bunch of rhythm game references if I'm the main coder*/
+/* Slide in and move UP on hover */
+.div-et-impera:hover {
+   /* Slide in from left */
+  bottom: 30px; /* Move up from bottom */
+}
+.div-left-click{
+border-width: 2px;
+  border-style: solid;
+  border-color: #908eb8;
+  padding: 15px;
+  background-color: #1f1e33;
+ 
+  z-index: 1000;
+  color: white;
+  text-align: center;
+
+  word-wrap: break-word;    /* Break long words */
+  overflow-wrap: break-word; /* Modern alternative */
+  white-space: normal;      /* Allow text to wrap */
+  width: 100%;             /* Ensure it uses available width */
+  box-sizing: border-box;
+}
+
+.div-right-click{
+border-width: 2px;
+  border-style: solid;
+  border-color: #908eb8;
+  padding: 15px;
+  background-color: #1f1e33;
+ 
+  z-index: 1000;
+  color: white;
+  text-align: center;
+
+  word-wrap: break-word;    /* Break long words */
+  overflow-wrap: break-word; /* Modern alternative */
+  white-space: normal;      /* Allow text to wrap */
+  width: 100%;             /* Ensure it uses available width */
+  box-sizing: border-box;
+}
+
+.div-scroll{
+border-width: 2px;
+  border-style: solid;
+  border-color: #908eb8;
+  padding: 15px;
+  background-color: #1f1e33;
+ 
+  z-index: 1000;
+  color: white;
+  text-align: center;
+
+  word-wrap: break-word;    /* Break long words */
+  overflow-wrap: break-word; /* Modern alternative */
+  white-space: normal;      /* Allow text to wrap */
+  width: 100%;             /* Ensure it uses available width */
+  box-sizing: border-box;
+}
+
+.div-controls{
+border-width: 2px;
+  border-style: solid;
+  border-color: #908eb8;
+  padding: 5px;
+  background-color: #1f1e33;
+  color: white;
+  text-align: center;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  
+  /* Text wrapping */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  width: 100%;
+  box-sizing: border-box;
+
+
+}
