@@ -1,0 +1,11 @@
+Model Information:
+* title:	LEGO Sinking Titanic
+* source:	https://sketchfab.com/3d-models/lego-sinking-titanic-8048d606fcb54bcc9b3e0b52c5d6a394
+* author:	Oscar (https://sketchfab.com/oscartong)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "LEGO Sinking Titanic" (https://sketchfab.com/3d-models/lego-sinking-titanic-8048d606fcb54bcc9b3e0b52c5d6a394) by Oscar (https://sketchfab.com/oscartong) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
